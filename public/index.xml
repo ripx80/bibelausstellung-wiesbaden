@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bibelausstellung Wiesbaden</title>
+    <link>/</link>
+    <description>Recent content on Bibelausstellung Wiesbaden</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 15 Oct 2018 02:13:50 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Impressum</title>
+      <link>/page/impressum/</link>
+      <pubDate>Mon, 15 Oct 2018 02:13:50 +0000</pubDate>
+      
+      <guid>/page/impressum/</guid>
+      <description>Impressum Angaben gemäß § 5 TMG Jacob Ismaiel Kantstr. 16 65232 Taunusstein / Hahn
+Kontakt Telefon: +49 (0) 178-57 59 660 E-Mail: info@bibelausstellung-wiesbaden.de
+Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen. Haftung für Inhalte Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</description>
+    </item>
+    
+    <item>
+      <title>Datenschutz</title>
+      <link>/page/datenschutz/</link>
+      <pubDate>Wed, 03 Oct 2018 02:13:50 +0000</pubDate>
+      
+      <guid>/page/datenschutz/</guid>
+      <description>1. Datenschutz auf einen Blick Allgemeine Hinweise Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie unsere Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.
+Datenerfassung auf unserer Website Wer ist verantwortlich für die Datenerfassung auf dieser Website? Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber.</description>
+    </item>
+    
+  </channel>
+</rss>

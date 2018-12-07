@@ -1,0 +1,60 @@
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> {{ .Title }}</title>
+    <meta name="robots" content="{{.Site.Params.Robots}}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{.Site.Params.Description}}" />
+    <meta name="keywords" content="{{.Site.Params.Keywords}}" />
+    <meta name="author" content="{{.Site.Params.Author}}" />
+    <meta name="publisher" content="{{.Site.Params.Publisher}}" />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="{{.Site.BaseURL}}css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="{{.Site.BaseURL}}css/icomoon.css">
+    <!-- Simple Line Icons -->
+    <link rel="stylesheet" href="{{.Site.BaseURL}}css/simple-line-icons.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="{{.Site.BaseURL}}css/magnific-popup.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="{{.Site.BaseURL}}css/bootstrap.css">
+    <!-- Font Awesome  -->    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- Leaflet  -->  
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+    integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+    crossorigin=""/>
+    <!-- 
+    Default Theme Style 
+    You can change the style.css (default color purple) to one of these styles
+    
+    1. pink.css
+    2. blue.css
+    3. turquoise.css
+    4. orange.css
+    5. lightblue.css
+    6. brown.css
+    7. green.css
+
+    -->
+    <link rel="stylesheet" href="{{.Site.BaseURL}}css/style.css">
+
+    <!--
+       custom css files can be configured in config.toml:
+       [params]
+          custom_css = ["css/foo.css", "css/bar.css"]
+     -->
+    {{ range .Site.Params.custom_css }}
+    <link rel="stylesheet" href="{{ . }}">
+    {{ end }}
+
+    <!-- Modernizr JS -->
+    <script src="{{.Site.BaseURL}}js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+ 

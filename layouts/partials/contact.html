@@ -1,0 +1,97 @@
+	<section id="fh5co-contact" data-section="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate">{{ with .Site.Params.contact.title }}{{ . | markdownify }}{{ end }}</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext to-animate">
+							<h3>{{ with .Site.Params.contact.description }}{{ . | markdownify }}{{ end }}</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row row-bottom-padded-md">
+				<div class="col-md-6 to-animate">
+					<h3>{{ with .Site.Params.contact.info }}{{ . | markdownify }}{{ end }}</h3>
+					<ul class="fh5co-contact-info">
+					{{ range .Site.Params.contact.details }}
+						<li class="fh5co-contact-address "><i class="{{ with index . 0}}{{ . }}{{ end }}"></i>{{ with index . 1}}{{ . | markdownify }}{{ end }}</li>
+					{{ end }}
+					</ul>
+				</div>
+				<div class="col-md-6 to-animate">
+					<h3>{{ with .Site.Params.contact.form }}{{ . | markdownify }}{{ end }}</h3>					
+					<form id="reused_form" method="post" action="//bibelausstellung-wiesbaden.de/form/handler.php">					
+						<!-- formspree.io/{{ with .Site.Params.email }}{{.}}{{ end }} -->
+                    <div class="form-group ">
+						{{ with .Site.Params.contact.name }}
+						<label for="name" class="sr-only">{{ . | markdownify }}</label>
+						<input id="name" class="form-control" name="name" placeholder="{{ . }}" type="text">
+						{{ end }}
+					</div>					
+                    <div class="form-group ">
+						{{ with .Site.Params.contact.email }}
+						<label for="email" class="sr-only">{{ . | markdownify }}</label>
+						<input id="email" class="form-control" name="email" placeholder="{{ . }}" type="email">
+						{{ end }}
+					</div>
+					<div class="form-group ">
+						{{ with .Site.Params.contact.phone }}
+						<label for="phone" class="sr-only">{{ . | markdownify }}</label>
+						<input id="phone" class="form-control" name="phone" placeholder="{{ . }}" type="text">
+						{{ end }}
+					</div>
+					<div class="form-group ">
+						{{ with .Site.Params.contact.visitdate }}
+						<label for="visitdate" class="sr-only">{{ . | markdownify }}</label>
+						<input id="visitdate" class="form-control" name="visitdate" placeholder="Besuchsdatum" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" >
+						<!-- <input id="visitdate" class="form-control" name="visitdate" type="date" min="2018-12-22" max="2019-01-06"> -->
+						{{ end }}
+					</div>
+					<div class="form-group ">
+						{{ with .Site.Params.contact.time }}
+						<label for="time" class="sr-only">{{ . | markdownify }}</label>
+						<input id="time" class="form-control" name="time" placeholder="{{ . }}" type="text">						
+						{{ end }}
+					</div>
+					<div class="form-group ">
+						{{ with .Site.Params.contact.people }}
+						<label for="people" class="sr-only">{{ . | markdownify }}</label>
+						<input id="people" class="form-control" name="people" placeholder="{{ . }}" type="text">
+						{{ end }}
+					</div>
+					<div class="form-group ">
+						{{ with .Site.Params.contact.language }}
+						<label for="language" class="sr-only">{{ . | markdownify }}</label>
+						<input id="language" class="form-control" name="language" placeholder="{{ . }}" type="text">
+						{{ end }}
+					</div>
+					<div class="form-group ">
+						{{ with .Site.Params.contact.message }}
+						<label for="message" class="sr-only">{{ . | markdownify }}</label>
+						<textarea id="message" cols="30" rows="5" class="form-control" name="message" placeholder="{{ . }}"></textarea>
+						{{ end }}
+					</div>
+					<div class="col-sm-5">
+							<img src="//bibelausstellung-wiesbaden.de/form/captcha.php" id="captcha_image"/>
+							<br/>
+							<a id="captcha_reload" href="#" style="font-weight:bold;">Captcha neu laden</a>
+						</div>
+						<div class="col-sm-6">
+							<label for="email">Gib hier den rechts angezeigten Code ein:</label>
+							<input type="text" class="form-control" required id="captcha" name="captcha" >
+						</div>
+					<div class="form-group ">
+						<input class="btn btn-primary btn-lg" value="{{ .Site.Params.contact.button | markdownify }}" type="submit">
+					</div>					
+					</form>
+					<div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Danke für deine Anfrage. Wir werden uns bei dir melden.</h3> </div>
+                    <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Hier lief was schief. Versuche es nocheinmal </div>
+				</div>
+
+			</div>
+		</div>
+		{{ if .Site.Params.contact.map }}
+        	<div id="map" class="to-animate"></div>
+		{{ end }}
+	</section>

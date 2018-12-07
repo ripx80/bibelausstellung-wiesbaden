@@ -1,0 +1,254 @@
+# Page settings
+baseurl = "/" 
+title = "Bibelausstellung Wiesbaden"
+theme = "hugo-elate-theme"
+
+# Language Support
+DefaultContentLanguage = "de"
+
+[params]
+custom_css = ["/css/custom1.css"]
+
+# Meta
+author = "JW Wiesbaden"
+description = "Bibelausstellung in Wiesbaden, Schriften, Steintafeln und vieles mehr"
+keywords = "Bibel, Bibelausstellung, Wiesbaden, Schriften, Schriftrollen, Steintafeln, Ausstellung"
+email = "info@bibelausstellung-wiesbaden.de"
+robots = "follow, all"
+publisher = "JW Wiesbaden"
+
+#global en space
+datapolicy = "<a href='/page/datenschutz/'>Datenschutz</a>"
+sitenotice = "<a href='/page/impressum/'>Impressum</a>"
+
+######## BEGIN DE #######
+
+[Languages.de]
+locale = "de"
+
+[Languages.de.navigation]
+brand = "<img class='logo' /><span >Bibelausstellung Wiesbaden</span>"
+#brand = "<img class='logo img-responsive' alt='Bibelausstellung Wiesbaden' src='images/logo-black-75.png'/><span>Bibelausstellung Wiesbaden</span>"
+home = "Startseite"
+work = "Die Ausstellung"
+services = "Führungen"
+about = "Über uns"
+contact = "Kontakt"
+
+# Hero section
+[Languages.de.hero]
+title = "<span class='landing-title'>Die Bibel</span><br/><h1>Ein Handbuch fürs Leben</h1>"
+subtitle = '<h2 class="landing-subtitle">Multimediale Ausstellung</h2><h1>22.12.2018 - 06.01.2019</h1>'
+landing = 'landing.png'
+
+# Intro section
+[Languages.de.intro]
+[[Languages.de.intro.item]]
+title = "Sprache und Kultur"
+description = "Einfluss der Bibel auf Geschichte, Sprache und Kultur"
+url = "#"
+button = "Erfahren Sie mehr"
+icon = "fas fa-book-reader"
+#img = "img_7.jpg"
+
+[[Languages.de.intro.item]]
+title = "Sinnfragen"
+description = "Praktische Tipps und wertvolle Antworten auf wichtige Sinnfragen"
+url = "#"
+button = "Erfahren Sie mehr"
+icon = "fas fa-brain"
+#img = "img_8.jpg"
+
+[[Languages.de.intro.item]]
+title = "Leben und Familie"
+description = "Erfahren Sie mehr über den nutzen der Bibel für Leben und Familie"
+url = "#"
+button = "Erfahren Sie mehr"
+icon = "fas fa-users"
+#img = "img_10.jpg"
+
+# Work section
+[Languages.de.work]
+enable = true
+nav = true
+title = "Die Ausstellung"
+description = "Das erwartet Sie in der Bibelausstellung."
+footertext = 'Und noch viele weitere Exponate.'
+background = "work.jpg"
+
+[[Languages.de.work.row]]
+  img = "work_1.jpg"
+  alt = "Image1"
+  title = "Allioli-Bibel"
+  subtitle = "Prachtausgabe der Allioli-Bibel aus der 2. Hälfte des 19. Jahrhunderts, mit aufwendigen Chromolithographien."
+  #pdf = "test.pdf"
+
+[[Languages.de.work.row]]
+  img = "work_2.jpg"
+  alt = "Image2"
+  title = "Cyrus-Zylinder"
+  subtitle = "Der Cyrus-Zylinder – als erste Charta der Menschenrechte anerkannt – bestätigt den Bibelbericht."
+
+[[Languages.de.work.row]]
+  img = "work_3.jpg"
+  alt = "Image3"
+  title = "Wenzelsbibel"
+  subtitle = "Die Wenzelsbibel, die erste deutschsprachige Prachthandschrift der Bibel, steht für höchstes kalligraphisches Niveau."
+
+[[Languages.de.work.row]]
+  img = "work_5.jpg"
+  alt = "Image4"
+  title = "Die große Jesajarolle"
+  subtitle = "Die große Jesajarolle aus Höhle 1 von Qumran beweist die Genauigkeit der Übersetzungsarbeit der Bibel. Sie stammt aus dem 2. Jh. v. Chr."
+
+[[Languages.de.work.row]]
+  img = "work_4.jpg"
+  alt = "Image5"
+  title = "Mesa-Stein"
+  subtitle = "Der Mesa-Stein (9. Jahrhundert v. Chr.) bestätigt, dass der Gottesname Jehova auch nichtisraelischen Völkern bekannt war."
+
+[[Languages.de.work.row]]
+  img = "work_6.jpg"
+  alt = "Image6"
+  title = "Merian-Bibel"
+  subtitle = "Bei der Merian-Bibel handelt es sich um eine Prachtausgabe mit über 230 Kupferstichen des Künstlers Matthäus Merian d. Ä."
+
+# Services section
+[Languages.de.services]
+enable = true
+nav = false
+title = "Multimediale Ausstellung"
+description = "Die Ausstellung informiert multimedial über die Geschichte der deutschen Bibel und ihren Einfluss auf unsere Sprache und Kultur, sowie über die Herausforderungen moderner Übersetzungen. Dabei werden einzigartige historische Bibelausgaben und Handschriften präsentiert."
+
+[[Languages.de.services.item]]
+  title = "Führungen"
+  description = "Es finden ganztägig kostenfreie Führungen statt. Außerdem gibt es die Möglichkeit, Fragen zu stellen und sich weitergehend zu informieren. Melden Sie sich für eine Führung mit dem Kontaktformular an."
+  icon = "fas fa-chalkboard-teacher"
+
+[[Languages.de.services.item]]
+  title = "Erstausgaben"
+  description = "Ausgestellt werden viele Erstausgaben, unter anderem die Dietenberger Bibel. Die Dietenberger Bibel ist eine katholische Ausgabe, die einige Monate vor der Lutherbibel erschienen ist. Es ist die weitverbreitetste katholische Bibel im oberdeutschen Sprachraum – außerhalb Bayerns."
+  icon = "fas fa-book"
+  
+[[Languages.de.services.item]]
+  title = "Steintafeln"
+  description = "Entdecken Sie eine Reproduktion des Mesa-Steins. Der Mesa-Stein ist ein interessantes außerbiblisches Zeugnis. Der Mesa Stein wurde 1868 östlich des Toten Meeres bei Dhiban (Dibon) gefunden. Dieser Fund bestätigt den biblischen Bericht aus 2. Könige Kapitel 1 und 3, welcher den Aufstand Mesa's gegen die Israeliten unternahm."
+  icon = "icon-layers"
+
+[[Languages.de.services.item]]
+  title = "Videomaterial"
+  description = "Es werden Insgesamt 9 Videos gezeigt. Möchten Sie mehr dazu erfahren? Dann besuchen Sie unsere Ausstellung, wir freuen uns auf Ihren Besuch."      
+  icon = "fas fa-video"
+  
+# About section
+[Languages.de.about]
+enable = false
+nav = false
+title = "Rückmeldungen zur Ausstellung"
+description = "Was Besucher über die Ausstellung sagten"
+
+[[Languages.de.about.item]]
+  name = "Besucher1"
+  position = "Lehrer"
+  description = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur"
+  img = "person1.jpg"
+  alt = "Besucher1"
+  #social = [
+    #["icon-twitter", "#"],
+    #["icon-facebook", "#"],
+    #["icon-linkedin", "#"]
+  #]
+
+[[Languages.de.about.item]]
+  name = "Besucher2"
+  position = "Lehrer"
+  description = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur"
+  img = "person2.jpg"
+  alt = "Besucher1"
+
+
+[[Languages.de.about.item]]
+  name = "Besucher2"
+  position = "Lehrer"
+  description = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur"
+  img = "person3.jpg"
+  alt = "Besucher1"
+  
+# Counters section
+[Languages.de.counters]
+enable = true
+title = "Statistiken"
+background = "full_image_1.jpg"
+
+[[Languages.de.counters.item]]
+  description = "Ausgestellte Exponate"
+  icon = "fas fa-clone"
+  from = 0
+  to = 68
+  interval = 50
+  speed = 5000
+
+[[Languages.de.counters.item]]
+  description = "Besucher in vielen Städten"
+  icon = "icon-people"
+  from = 0
+  to = 100000
+  interval = 50
+  speed = 5000
+
+[[Languages.de.counters.item]]
+  description = "Rückmeldungen"
+  icon = "icon-pencil"
+  from = 0
+  to = 134
+  interval = 50
+  speed = 5000
+
+[[Languages.de.counters.item]]
+  description = "Ausstellungen in Europa"
+  icon = "fas fa-globe-africa"
+  from = 0
+  to = 16
+  interval = 50
+  speed = 5000
+
+# Contact section
+[Languages.de.contact]
+    enable = true
+    nav = true
+    map = true
+    title = "Führungen"
+    description = "Melden Sie sich für eine Führung an, ob Sie alleine oder als Gruppe die Ausstellung besuchen möchten. Bitte füllen Sie das untere Formular aus und senden Sie es an uns. Wir kümmern uns um alles weitere."
+    
+    details = [
+        ["icon-home", "<b>Königreichssaal Jehovas Zeugen</b><br/ > 55252 Wiesbaden (Mainz-Kastel)<br /> Anton-Zeeh-Str. 4"],
+        ["icon-phone", "+49 (0) 177-91 06 860"],
+        ["icon-phone", "+49 (0) 613-45 64 9795"],
+        ["icon-envelope", "info@bibelausstellung-wiesbaden.de"],    
+        ["icon-clock", "Öffnungszeiten: Montag bis Sonntag: 10:00-20:00 Uhr"]   
+      ]
+
+    name = "Name"
+    email = "Email"
+    phone = "Telefon"    
+    visitdate = "Besuchsdatum"
+    time = "Uhrzeit"
+    people = "Anzahl Personen"
+    language = "Bevorzugte Sprache"
+    message = "Bemerkungen"
+    button = "Anfrage senden"
+
+# Footer section
+[Languages.de.footer]
+enable = true
+copyright = '<br />Weitere Informationen und Antworten auf Fragen zur Bibel Online<br /><a href="https://jw.org" target="_blank" rel="noopener noreferrer"><img class="jworg" src="images/jworg.png" alt="jw.org" /></a><br />&copy; Jehovas Zeugen Wiesbaden, Alle Rechte vorbehalten.'  
+
+######## END DE #######
+
+## NOT USING ##
+
+[Languages.en.video]
+enable = false
+title = "Watch the video"
+icon = "icon-play2"
+url = "https://vimeo.com/channels/staffpicks/93951774"
